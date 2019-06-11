@@ -1,0 +1,146 @@
+/* Main Styling */
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main-wrapper {
+	display: block;
+	overflow-x:hidden;
+}
+
+.container-fluid {
+	min-height: 100vh;
+	padding: 0 !important;
+	display: block;
+	position: relative;
+}
+
+.contact-fluid.contact,
+.contact-fluid.portfolio {
+	height: 100vh;
+}
+
+.container-fluid.contact {
+	background: linear-gradient(#fff, #a8ffec);
+}
+
+
+.container-fluid.portfolio {
+	padding: 50px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-fluid.portfolio .project-card {
+	position: relative;
+	min-height: 200px;
+	max-height: 400px;
+	height: 20%;
+	min-width: 200px;
+	max-width: 300px;
+	width: 20%;
+	border-radius: 5px;
+	margin: 10px;
+	background: #fcfcfc;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+	text-align: center;
+}
+
+.container-fluid.portfolio .project-card img {
+	display: block;
+	width: 80%;
+	margin: 5px auto;
+	border-radius: 5px;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+}
+
+.container-fluid.portfolio .project-card h5 {
+	font-size: 14px;
+	letter-spacing: 3px;
+	color: #222;
+	font-weight: bold;
+}
+
+.container-fluid.portfolio .project-card p {
+	font-size: 12px;
+	color: #666;
+	margin: 0;
+}
+
+.container-fluid.portfolio .project-card a {
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: #6c34ad;
+}
+
+
+
+.container-fluid.contact {
+	text-align: center;
+}
+
+.container-fluid.contact .link-navigation {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container-fluid.contact a {
+	display: inline-block;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+.container-fluid.contact a:after {
+	content: '';
+	position: absolute;
+	width: 70%;
+	height: 4px;
+	border-radius: 50%;
+	transform: translateX(-50%);
+	bottom: -10px;
+	left: 50%;
+	background: rgba(0,0,0,0.05);
+	transition: 250ms cubic-bezier(.75,-0.5,0,1.75);
+}
+
+.container-fluid.contact svg {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transition: 250ms cubic-bezier(.75,-0.5,0,1.75);
+}
+
+.container-fluid.contact path {
+	fill: rgba(0,0,0,0.7);
+}
+
+.container-fluid.contact p {
+	font-size: 8px;
+	letter-spacing: 2px;
+	margin-top: 10px;
+}
+
+
+@media (hover) {
+	.container-fluid.contact a:hover svg {
+		width: 115%;
+		height: 115%;
+		top: 45%;
+	}
+
+	.container-fluid.contact a:hover:after {
+		width: 85%;
+		height: 5px;
+		background: rgba(0,0,0,0.09);
+	}
+}
