@@ -21,7 +21,7 @@
 }
 
 .container-fluid.contact {
-	background: linear-gradient(#fff, #a8ffec);
+	background: linear-gradient(#fff, #e6e6ff);
 }
 
 
@@ -34,12 +34,8 @@
 
 .container-fluid.portfolio .project-card {
 	position: relative;
-	min-height: 200px;
-	max-height: 400px;
-	height: 20%;
-	min-width: 200px;
-	max-width: 300px;
-	width: 20%;
+	height: 500px;
+	width: 250px;
 	border-radius: 5px;
 	margin: 10px;
 	background: #fcfcfc;
@@ -49,10 +45,18 @@
 
 .container-fluid.portfolio .project-card img {
 	display: block;
-	width: 80%;
+	width: 200px;
+	height: 200px;
 	margin: 5px auto;
 	border-radius: 5px;
 	box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+}
+
+.container-fluid.portfolio .project-card h6 {
+	font-size: 13px;
+	letter-spacing: 2px;
+	color: #666666;
+	margin-top: 10px;
 }
 
 .container-fluid.portfolio .project-card h5 {
@@ -62,7 +66,8 @@
 	font-weight: bold;
 }
 
-.container-fluid.portfolio .project-card p {
+.container-fluid.portfolio .project-card li {
+	text-align: left;
 	font-size: 12px;
 	color: #666;
 	margin: 0;
@@ -123,6 +128,7 @@
 .container-fluid.contact path {
 	fill: rgba(0,0,0,0.7);
 }
+
 
 .container-fluid.contact p {
 	font-size: 8px;
